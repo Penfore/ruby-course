@@ -21,33 +21,33 @@
 
 ##
 
-require "/home/fulvioleo/estudo-desenvolvimento/ruby-course/002_ruby-programming-language/calculators_methods.rb"
+require '/home/fulvioleo/estudo-desenvolvimento/ruby-course/002_ruby-programming-language/calculators_methods'
 
-puts "Simple calculator"
-25.times {print "-"}
+puts 'Simple calculator'
+25.times { print '-' }
 puts
-puts "Enter the first number: "
+puts 'Enter the first number: '
 first_number = gets.chomp
-puts "Enter the second number: "
+puts 'Enter the second number: '
 second_number = gets.chomp
 
-puts "What do you want to do?"
-puts "Enter 1 for multiply, 2 for addition, 3 for subtraction and 4 for division"
+puts 'What do you want to do?'
+puts 'Enter 1 for multiply, 2 for addition, 3 for subtraction and 4 for division'
 user_entry = gets.chomp
 puts "You selected #{user_entry}"
 
-if user_entry == "1"
-  puts "You have chosen multiply"
+if user_entry == '1'
+  puts 'You have chosen multiply'
   puts "Result: #{multiply(first_number, second_number)}"
-elsif user_entry == "2"
-  puts "You have chosen addition"
+elsif user_entry == '2'
+  puts 'You have chosen addition'
   puts "Result: #{add(first_number, second_number)}"
-elsif user_entry == "3"
-  puts "You have chosen subtraction"
+elsif user_entry == '3'
+  puts 'You have chosen subtraction'
   puts "Result: #{subtract(first_number, second_number)}"
-elsif user_entry == "4"
-  puts "You have chosen division"
+elsif user_entry == '4'
+  puts 'You have chosen division'
   puts "Result: #{divide(first_number, second_number)}"
 else
-  puts "Restart and choose a valid number"
+  puts 'Restart and choose a valid number'
 end
