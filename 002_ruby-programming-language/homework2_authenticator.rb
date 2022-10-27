@@ -3,8 +3,8 @@ users = [
     {username: "jack", password: "password2"},
     {username: "arya", password: "password3"},
     {username: "john", password: "password4"},
-    {username: "heisenberg", passoword: "password5"}
-]
+    {username: "heisenberg", password: "password5"}
+  ]
 
 def authenticate_user(username, password, list_of_users)
     list_of_users.each do |user_record|
